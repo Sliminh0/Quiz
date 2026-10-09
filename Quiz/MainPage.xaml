@@ -1,24 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Quiz.MainPage">
+             x:Class="Quiz.MainPage"
+             BackgroundImageSource="back.png"
+             Shell.NavBarIsVisible="False">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+            Spacing="25"
+            VerticalOptions="End">
 
-            <Label
-                Text="Hello, World!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+            <Label Text=" "/>
+
+            <Button 
+                x:Name="BtnNextPage"
+                Text="Começar" 
+                Clicked="OnClicked"
+                Margin="16, 0, 0, 100"
+                Padding="15"
+                HorizontalOptions="Start"
+                WidthRequest="150"
+                BackgroundColor="#45B645"
+                />
+
 
         </VerticalStackLayout>
+        
     </ScrollView>
 
 </ContentPage>
