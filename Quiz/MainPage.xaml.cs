@@ -9,9 +9,9 @@
         }
 
 
-        private void OnClicked(object sender, EventArgs e)
+        private async void OnClicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Pergunta1());
         }
     }
 }

@@ -2,11 +2,61 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Quiz.Pergunta1"
-             Title="Pergunta1">
+             Title="Pergunta1"
+             BackgroundImageSource="fund.png">
     <VerticalStackLayout>
+
+        
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Pergunta 1"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+            HorizontalOptions="Center" 
+            FontAttributes="Bold"
+            FontSize="Title"/>
+
+
+        <Label
+            Text="Qual organela celular é responsável pela produção de energia por meio da respiração celular?"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+
+        <VerticalStackLayout 
+            Padding="20"
+            Margin="0,50,0,0">
+
+            <Border 
+            Stroke="#3c9151"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 12"
+            BackgroundColor="#45B645"
+            >
+
+            <RadioButton
+            Content="Ribossomo"
+            GroupName="Res"
+            x:Name="But1"/></Border>
+
+        <RadioButton
+            Content="Mitocôndria"
+            GroupName="Res"
+            x:Name="But2"/>
+
+        <RadioButton
+            Content="Lisossomo"
+            GroupName="Res"
+            x:Name="But3"/>
+
+        <RadioButton
+            Content="Complexo de Golgi"
+            GroupName="Res"
+            x:Name="But4"/>
+
+            </VerticalStackLayout>
+
+        <Button></Button>
+
+
+
+            </VerticalStackLayout>
 </ContentPage>
