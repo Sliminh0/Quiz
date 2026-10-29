@@ -12,51 +12,101 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
             FontAttributes="Bold"
-            FontSize="Title"/>
+            TextColor="#A7F3D0"
+            FontSize="32"/>
 
 
         <Label
             Text="Qual organela celular é responsável pela produção de energia por meio da respiração celular?"
             VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            TextColor="#D9F5E9"
+            HorizontalOptions="Center"
+            FontSize="25"/>
 
 
         <VerticalStackLayout 
             Padding="20"
-            Margin="0,50,0,0">
+            Margin="0,20,0,0"
+            Spacing="3">
 
             <Border 
-            Stroke="#3c9151"
+            Stroke="#ffffff"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 12"
-            BackgroundColor="#45B645"
+            BackgroundColor="#D9F5E9"
+            HeightRequest="50"
+            
+            >
+                
+            <RadioButton
+            Margin="7,10,0,0"
+            Content="Ribossomo"
+            GroupName="Res"
+            x:Name="But1"
+            VerticalOptions="Center"/></Border>
+
+            <Border 
+            Stroke="#ffffff"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 12"
+            BackgroundColor="#D9F5E9"
+            HeightRequest="50"
+            >
+                
+            <RadioButton
+            Margin="7,10,0,0"
+            Content="Mitocôndria"
+            GroupName="Res"
+            x:Name="But2"
+            VerticalOptions="Center"/>
+            </Border>
+
+            <Border 
+            Stroke="#ffffff"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 12"
+            BackgroundColor="#D9F5E9"
+            HeightRequest="50"
             >
 
             <RadioButton
-            Content="Ribossomo"
-            GroupName="Res"
-            x:Name="But1"/></Border>
-
-        <RadioButton
-            Content="Mitocôndria"
-            GroupName="Res"
-            x:Name="But2"/>
-
-        <RadioButton
+            Margin="7,10,0,0"
             Content="Lisossomo"
             GroupName="Res"
-            x:Name="But3"/>
+            x:Name="But3"
+            VerticalOptions="Center"/>
+            </Border>
 
-        <RadioButton
+            <Border 
+            Stroke="#ffffff"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 12"
+            BackgroundColor="#D9F5E9"
+            HeightRequest="50"
+            >
+
+            <RadioButton
+            Margin="7,10,0,0"
             Content="Complexo de Golgi"
             GroupName="Res"
-            x:Name="But4"/>
+            x:Name="But4"
+            VerticalOptions="Center"/>
+            </Border>
 
-            </VerticalStackLayout>
+        </VerticalStackLayout>
 
-        <Button></Button>
+        <Button
+            x:Name="BtnNextPage"
+            Text="Próxima" 
+            Clicked="OnClicked"
+            Margin="16, 0, 0, 100"
+            Padding="15"
+            HorizontalOptions="Start"
+            WidthRequest="150"
+            BackgroundColor="#ffffff"
+            TextColor="#005744"/>
 
 
 
-            </VerticalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>

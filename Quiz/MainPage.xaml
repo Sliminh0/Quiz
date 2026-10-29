@@ -21,7 +21,8 @@
                 Padding="15"
                 HorizontalOptions="Start"
                 WidthRequest="150"
-                BackgroundColor="#45B645"
+                BackgroundColor="#ffffff"
+                TextColor="#005744"
                 />
 
 
