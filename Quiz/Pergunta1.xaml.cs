@@ -12,6 +12,7 @@ public partial class Pergunta1 : ContentPage
         if (But2.IsChecked)
         {
             ScoreStore.Add(1);
+
         }
 
         await Navigation.PushAsync(new Pergunta2());
