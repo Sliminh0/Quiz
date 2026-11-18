@@ -33,7 +33,7 @@
             Stroke="#ffffff"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 12"
-            BackgroundColor="#D9F5E9"
+            BackgroundColor="#75bd9a"
             HeightRequest="50"
             
             >
@@ -49,7 +49,7 @@
             Stroke="#ffffff"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 12"
-            BackgroundColor="#D9F5E9"
+            BackgroundColor="#75bd9a"
             HeightRequest="50"
             >
                 
@@ -65,7 +65,7 @@
             Stroke="#ffffff"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 12"
-            BackgroundColor="#D9F5E9"
+            BackgroundColor="#75bd9a"
             HeightRequest="50"
             >
 
@@ -81,7 +81,7 @@
             Stroke="#ffffff"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 12"
-            BackgroundColor="#D9F5E9"
+            BackgroundColor="#75bd9a"
             HeightRequest="50"
             >
 

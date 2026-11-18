@@ -2,11 +2,110 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Quiz.Pergunta2"
-             Title="Pergunta2">
+             Title="Pergunta2"
+             BackgroundImageSource="fund.png">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        Text="Pergunta 2"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontAttributes="Bold"
+        TextColor="#A7F3D0"
+        FontSize="32"/>
+
+
+        <Label
+        Text="Qual é a principal função dos decompositores em um ecossistema?"
+        VerticalOptions="Center"
+        TextColor="#D9F5E9"
+        HorizontalOptions="Center"
+        FontSize="25"/>
+
+
+        <VerticalStackLayout 
+        Padding="20"
+        Margin="0,20,0,0"
+        Spacing="3">
+
+            <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        
+        >
+
+                <RadioButton
+        Margin="7,10,0,0"
+        Content="Produzir matéria orgânica pela fotossíntese"
+        GroupName="Res"
+        x:Name="But1"
+        VerticalOptions="Center"/>
+            </Border>
+
+            <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+                <RadioButton
+        Margin="7,10,0,0"
+        Content="Consumir exclusivamente animais herbívoros"
+        GroupName="Res"
+        x:Name="But2"
+        VerticalOptions="Center"/>
+            </Border>
+
+            <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+                <RadioButton
+        Margin="7,10,0,0"
+        Content="Reciclar nutrientes da matéria orgânica"
+        GroupName="Res"
+        x:Name="But3"
+        VerticalOptions="Center"/>
+            </Border>
+
+            <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+                <RadioButton
+        Margin="7,10,0,0"
+        Content="Produzir oxigênio pela respiração"
+        GroupName="Res"
+        x:Name="But4"
+        VerticalOptions="Center"/>
+            </Border>
+
+        </VerticalStackLayout>
+
+        <Button
+        x:Name="BtnNextPage"
+        Text="Próxima" 
+        Clicked="OnClicked"
+        Margin="16, 0, 0, 100"
+        Padding="15"
+        HorizontalOptions="Start"
+        WidthRequest="150"
+        BackgroundColor="#ffffff"
+        TextColor="#005744"/>
+
+
+
     </VerticalStackLayout>
 </ContentPage>
