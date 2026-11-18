@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz.Pergunta7"
+             Title="Pergunta7"
+             BackgroundImageSource="fund.png">
+    <VerticalStackLayout>
+
+        <Label 
+        Text="Pergunta 7"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontAttributes="Bold"
+        TextColor="#A7F3D0"
+        FontSize="32"/>
+
+
+        <Label
+        Text="Qual bioma brasileiro é conhecido por apresentar vegetação adaptada à escassez de água?"
+        VerticalOptions="Center"
+        TextColor="#D9F5E9"
+        HorizontalOptions="Center"
+        FontSize="25"/>
+
+
+        <VerticalStackLayout 
+        Padding="20"
+        Margin="0,20,0,0"
+        Spacing="3">
+
+            <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        
+        >
+
+                <RadioButton
+        Margin="7,10,0,0"
+        Content="Amazônia"
+        GroupName="Res"
+        x:Name="But1"
+        VerticalOptions="Center"/>
+            </Border>
+
+            <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+                <RadioButton
+        Margin="7,10,0,0"
+        Content="Cerrado"
+        GroupName="Res"
+        x:Name="But2"
+        VerticalOptions="Center"/>
+            </Border>
+
+            <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+                <RadioButton
+        Margin="7,10,0,0"
+        Content="Pantanal"
+        GroupName="Res"
+        x:Name="But3"
+        VerticalOptions="Center"/>
+            </Border>
+
+            <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+                <RadioButton
+        Margin="7,10,0,0"
+        Content="Caatinga"
+        GroupName="Res"
+        x:Name="But4"
+        VerticalOptions="Center"/>
+            </Border>
+
+        </VerticalStackLayout>
+
+        <Button
+        x:Name="BtnNextPage"
+        Text="Próxima" 
+        Clicked="OnClicked"
+        Margin="16, 0, 0, 100"
+        Padding="15"
+        HorizontalOptions="Start"
+        WidthRequest="150"
+        BackgroundColor="#ffffff"
+        TextColor="#005744"/>
+
+    </VerticalStackLayout>
+</ContentPage>

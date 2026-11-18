@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz.Pergunta6"
+             Title="Pergunta6"
+             BackgroundImageSource="fund.png">
+
+    <VerticalStackLayout>
+
+        <Label 
+        Text="Pergunta 6"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontAttributes="Bold"
+        TextColor="#A7F3D0"
+        FontSize="32"/>
+
+
+    <Label
+        Text="Qual fenômeno explica o movimento da água através de uma membrana semipermeável?"
+        VerticalOptions="Center"
+        TextColor="#D9F5E9"
+        HorizontalOptions="Center"
+        FontSize="25"/>
+
+
+    <VerticalStackLayout 
+        Padding="20"
+        Margin="0,20,0,0"
+        Spacing="3">
+
+        <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        
+        >
+
+            <RadioButton
+        Margin="7,10,0,0"
+        Content="Difusão facilitada"
+        GroupName="Res"
+        x:Name="But1"
+        VerticalOptions="Center"/>
+        </Border>
+
+        <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+            <RadioButton
+        Margin="7,10,0,0"
+        Content="Osmose"
+        GroupName="Res"
+        x:Name="But2"
+        VerticalOptions="Center"/>
+        </Border>
+
+        <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+            <RadioButton
+        Margin="7,10,0,0"
+        Content="Fagocitose"
+        GroupName="Res"
+        x:Name="But3"
+        VerticalOptions="Center"/>
+        </Border>
+
+        <Border 
+        Stroke="#ffffff"
+        StrokeThickness="2"
+        StrokeShape="RoundRectangle 12"
+        BackgroundColor="#75bd9a"
+        HeightRequest="50"
+        >
+
+            <RadioButton
+        Margin="7,10,0,0"
+        Content="Transporte ativo"
+        GroupName="Res"
+        x:Name="But4"
+        VerticalOptions="Center"/>
+        </Border>
+
+    </VerticalStackLayout>
+
+    <Button
+        x:Name="BtnNextPage"
+        Text="Próxima" 
+        Clicked="OnClicked"
+        Margin="16, 0, 0, 100"
+        Padding="15"
+        HorizontalOptions="Start"
+        WidthRequest="150"
+        BackgroundColor="#ffffff"
+        TextColor="#005744"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
