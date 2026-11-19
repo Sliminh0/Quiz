@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz.Resultados"
+             Title="Resultados"
+                BackgroundImageSource="fund.png">
+    <VerticalStackLayout>
+        <Label 
+        Text="Fim!!"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        FontAttributes="Bold"
+        TextColor="#A7F3D0"
+        FontSize="32"/>
+
+        <HorizontalStackLayout>
+
+        <Label
+        Text="Você fez  "
+        VerticalOptions="Center"
+        TextColor="#D9F5E9"
+        HorizontalOptions="Center"
+        FontSize="25"/>
+
+
+            <Label
+                x:Name="resultado"
+        Text=""
+        VerticalOptions="Center"
+        TextColor="#D9F5E9"
+        HorizontalOptions="Center"
+        FontSize="25"/>
+
+
+
+        </HorizontalStackLayout>
+
+
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="End">
+
+            <Label Text=" "/>
+
+            <HorizontalStackLayout>
+            <Button 
+                x:Name="BtnMenu"
+                Text="Menu" 
+                Clicked="OnClicked"
+                Margin="16, 0, 0, 100"
+                Padding="15"
+                HorizontalOptions="Start"
+                WidthRequest="120"
+                BackgroundColor="#ffffff"
+                TextColor="#005744"
+                />
+
+
+            <Button 
+                x:Name="BtnReset"
+                Text="Jogar Denovo" 
+                Clicked="OnClickedReset"
+                Margin="16, 0, 0, 100"
+                Padding="15"
+                HorizontalOptions="Start"
+                WidthRequest="120"
+                BackgroundColor="#ffffff"
+                TextColor="#005744"
+                />
+</HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

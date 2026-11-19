@@ -15,6 +15,6 @@ public partial class Pergunta8 : ContentPage
 
         }
 
-        await Navigation.PushAsync(new Pergunta3());
+        await Navigation.PushAsync(new Resultados());
     }
 }
